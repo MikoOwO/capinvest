@@ -1,0 +1,15 @@
+{
+  "name": "capinvest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capinvest Partners — site vitrine (FR / EN)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node serve.mjs",
+    "test": "node --test \"test/*.test.mjs\""
+  }
+}

@@ -1,0 +1,318 @@
+<div style="font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; color: #0B2545; background: #F5F6F8; min-width: 0">
+
+<!-- En-tête -->
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(11,37,69,0.55); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: #F5F6F8; border-bottom: 1px solid rgba(245,246,248,0.10)">
+  <div style="height: 84px; max-width: 1440px; margin: 0 auto; padding: 0 clamp(16px, 2.4vw, 40px); display: flex; align-items: center; gap: 24px">
+    <a href="#accueil" aria-label="{{a11y.home}}" style="display: flex; align-items: center; flex: none">
+      <img src="/assets/capinvest-logo.png" width="968" height="335" alt="Capinvest Partners" style="display: block; height: 46px; width: auto">
+    </a>
+    <nav class="cp-nav cp-desk" aria-label="{{a11y.mainNav}}" style="flex: 1; justify-content: center; align-items: center; gap: clamp(20px, 2.2vw, 36px); font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap">
+      <a href="#metier">{{nav.business}}</a>
+      <a href="#expertise">{{nav.expertise}}</a>
+      <a href="#references">{{nav.references}}</a>
+      <a href="#fondateur">{{nav.founder}}</a>
+      <a href="#codeveloppement">{{nav.codev}}</a>
+    </nav>
+    <div class="cp-desk" style="flex: none; align-items: center; gap: 24px; margin-left: auto">
+      <a href="{{language.otherPath}}" class="cp-lang" data-lang-switch hreflang="{{language.otherLang}}" lang="{{language.otherLang}}" aria-label="{{language.switchLabel}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; color: #F5F6F8; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.04em">
+        <span style="{{lang.frStyle}}">FR</span>
+        <span aria-hidden="true" style="position: relative; width: 36px; height: 20px; border: 1.5px solid rgba(245,246,248,0.8); border-radius: 999px; box-sizing: border-box">
+          <span style="position: absolute; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #E0A43A; transition: left .25s ease; left: {{lang.knobLeft}}"></span>
+        </span>
+        <span style="{{lang.enStyle}}">EN</span>
+      </a>
+      <a href="#contact" class="cp-btn-outline" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1.5px solid #E0A43A; color: #F5F6F8; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap">{{nav.cta}}</a>
+    </div>
+    <button type="button" class="cp-burger" id="cp-burger" aria-expanded="false" aria-controls="cp-mobile-menu" aria-label="{{a11y.openMenu}}" data-label-open="{{a11y.openMenu}}" data-label-close="{{a11y.closeMenu}}" style="margin-left: auto; width: 48px; height: 48px; align-items: center; justify-content: center; background: none; border: 1px solid rgba(245,246,248,0.4); color: #F5F6F8; cursor: pointer">
+      <svg class="cp-burger-open" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width: 24px; height: 24px"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      <svg class="cp-burger-close" hidden aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width: 24px; height: 24px"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+  </div>
+  <nav id="cp-mobile-menu" hidden class="cp-nav cp-mobile" aria-label="{{a11y.mobileNav}}" style="background: #0B2545; border-top: 1px solid rgba(245,246,248,0.12); padding: 8px clamp(16px, 2.4vw, 40px) 28px; flex-direction: column; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em">
+      <a href="#metier" style="padding: 16px 0; border-bottom: 1px solid rgba(245,246,248,0.12)">{{nav.business}}</a>
+      <a href="#expertise" style="padding: 16px 0; border-bottom: 1px solid rgba(245,246,248,0.12)">{{nav.expertise}}</a>
+      <a href="#references" style="padding: 16px 0; border-bottom: 1px solid rgba(245,246,248,0.12)">{{nav.references}}</a>
+      <a href="#fondateur" style="padding: 16px 0; border-bottom: 1px solid rgba(245,246,248,0.12)">{{nav.founder}}</a>
+      <a href="#codeveloppement" style="padding: 16px 0; border-bottom: 1px solid rgba(245,246,248,0.12)">{{nav.codev}}</a>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 24px">
+        <a href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; background: #E0A43A; color: #0B2545; font-weight: 700; font-size: 14px">{{nav.cta}}</a>
+        <a href="{{language.otherPath}}" class="cp-lang" data-lang-switch hreflang="{{language.otherLang}}" lang="{{language.otherLang}}" aria-label="{{language.switchLabel}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; color: #F5F6F8; text-decoration: none; font: inherit; font-size: 14px; font-weight: 600">
+          <span style="{{lang.frStyle}}">FR</span>
+        <span aria-hidden="true" style="position: relative; width: 36px; height: 20px; border: 1.5px solid rgba(245,246,248,0.8); border-radius: 999px; box-sizing: border-box">
+          <span style="position: absolute; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #E0A43A; transition: left .25s ease; left: {{lang.knobLeft}}"></span>
+        </span>
+        <span style="{{lang.enStyle}}">EN</span>
+        </a>
+      </div>
+    </nav>
+</header>
+
+<main id="main">
+
+<!-- Accueil -->
+<section id="accueil" style="position: relative; overflow: hidden; margin-top: -85px; min-height: 820px; background: #0B2545; color: #F5F6F8; display: flex; flex-direction: column">
+  <div class="cp-zoom" aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(70% 60% at 72% 28%, #234C80 0%, rgba(11,37,69,0) 70%), radial-gradient(60% 50% at 15% 85%, #163763 0%, rgba(11,37,69,0) 70%), #0B2545">
+    <svg viewBox="0 0 600 760" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%">
+      <path d="M-40 760L162 0M-13 760L173 0M15 760L184 0M42 760L195 0M70 760L206 0M97 760L218 0M125 760L229 0M152 760L240 0M180 760L251 0M207 760L262 0M235 760L273 0M262 760L285 0M-12 654H265M13 562H268M33 483H270M51 416H272M67 358H274M80 307H275M92 264H277M101 227H278M110 196H279M117 168H280M123 145H280M129 124H281M133 107H281M137 92H282M141 79H282M144 68H283M146 59H283M149 50H283M150 43H283M152 37H283M338 760L315 0M365 760L327 0M393 760L338 0M420 760L349 0M448 760L360 0M475 760L371 0M503 760L382 0M530 760L394 0M558 760L405 0M585 760L416 0M613 760L427 0M640 760L438 0M335 654H612M332 562H587M330 483H567M328 416H549M326 358H533M325 307H520M323 264H508M322 227H499M321 196H490M320 168H483M320 145H477M319 124H471M319 107H467M318 92H463M318 79H459M317 68H456M317 59H454M317 50H451M317 43H450M317 37H448" fill="none" stroke="#9DB8DE" stroke-width="0.8" stroke-opacity="0.22" vector-effect="non-scaling-stroke"></path>
+    </svg>
+    <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,37,69,0.88) 0%, rgba(11,37,69,0.55) 50%, rgba(11,37,69,0.25) 100%)"></div>
+  </div>
+
+  <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 170px clamp(20px, 3vw, 48px) 48px">
+    <p class="cp-rise" style="margin: 0 0 28px; display: flex; align-items: center; gap: 16px; font-size: 15px; color: #E0A43A; animation-delay: 100ms">
+      <span aria-hidden="true" style="width: 40px; height: 1px; background: #E0A43A; flex: none"></span>
+      {{hero.eyebrow}}
+    </p>
+    <h1 class="cp-rise" style="margin: 0; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: clamp(44px, 6.6vw, 108px); line-height: 1.02; letter-spacing: -0.025em; max-width: 18ch; animation-delay: 220ms">{{hero.title}}</h1>
+    <p class="cp-rise" style="margin: 32px 0 0; max-width: 56ch; font-size: clamp(17px, 1.3vw, 19px); line-height: 1.65; color: rgba(245,246,248,0.85); animation-delay: 380ms">{{hero.lead}}</p>
+    <div class="cp-rise" style="margin-top: 44px; display: flex; flex-wrap: wrap; gap: 20px 44px; animation-delay: 520ms">
+      <a href="#contact" class="cp-link" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; border-bottom: 1.5px solid #E0A43A; color: #F5F6F8; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 0.02em">{{hero.ctaTalk}}<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#E0A43A" stroke-width="1.8" style="width: 18px; height: 18px"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
+      <a href="#references" class="cp-link" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; border-bottom: 1.5px solid rgba(245,246,248,0.5); color: #F5F6F8; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 0.02em">{{hero.ctaReferences}}<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#E0A43A" stroke-width="1.8" style="width: 18px; height: 18px"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
+    </div>
+  </div>
+
+  <div style="position: relative; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: flex-end; gap: 24px 48px; padding: 0 0 40px clamp(20px, 2vw, 28px)">
+    <a href="#decouvrir" class="cp-link" style="order: 2; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-right: clamp(20px, 2vw, 28px); color: #F5F6F8; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 15px; text-transform: uppercase; letter-spacing: 0.04em"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#E0A43A" stroke-width="1.6" style="width: 20px; height: 20px"><path d="M12 4v15M6 13l6 6 6-6"></path></svg>{{hero.discover}}</a>
+    
+  </div>
+</section>
+
+<!-- Notre métier -->
+<section id="metier" style="padding: clamp(80px, 9vw, 130px) clamp(20px, 2vw, 28px) clamp(64px, 7vw, 100px)">
+  <span id="decouvrir"></span>
+  <div style="display: flex; flex-wrap: wrap; gap: 32px clamp(40px, 8vw, 140px); align-items: flex-start">
+    <h2 style="flex: 1 1 560px; margin: 0; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 400; font-size: clamp(40px, 5vw, 80px); line-height: 1.08; letter-spacing: -0.01em; max-width: 15ch">{{business.title}}</h2>
+    <p style="flex: 1 1 420px; margin: 0; font-size: 19px; line-height: 1.8; color: #0B2545; max-width: 48ch">{{business.lead}}</p>
+  </div>
+
+  <dl style="margin: clamp(80px, 9vw, 140px) 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 56px 24px; text-align: center">
+    {{{stats}}}
+  </dl>
+
+  <div role="table" aria-label="{{a11y.compare}}" style="margin-top: clamp(96px, 10vw, 150px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(20px, 5vw, 80px)">
+    <div role="row" style="display: contents">
+      <div role="columnheader" style="padding-bottom: 18px; border-bottom: 1.5px solid rgba(11,37,69,0.25); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.03em; color: #5A6577">{{business.compareThem}}</div>
+      <div role="columnheader" style="padding-bottom: 18px; border-bottom: 1.5px solid #E0A43A; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.03em; color: #8C5E12">{{business.compareUs}}</div>
+    </div>
+    {{{compareRows}}}
+  </div>
+
+  <div style="margin-top: clamp(96px, 10vw, 150px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 48px clamp(32px, 4vw, 64px)">
+    {{{pillars}}}
+  </div>
+</section>
+
+<!-- Panneau : Ce que nous faisons pour vous -->
+<section style="padding: 0 clamp(12px, 1.7vw, 24px)">
+  <div style="position: relative; overflow: hidden; background: radial-gradient(80% 90% at 85% 10%, #2A5488 0%, rgba(11,37,69,0) 65%), #163763; color: #F5F6F8; padding: clamp(48px, 5vw, 72px) clamp(20px, 4vw, 60px) clamp(56px, 6vw, 88px)">
+    <svg aria-hidden="true" viewBox="0 0 600 760" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%">
+      <path d="M-40 760L162 0M-13 760L173 0M15 760L184 0M42 760L195 0M70 760L206 0M97 760L218 0M125 760L229 0M152 760L240 0M180 760L251 0M207 760L262 0M235 760L273 0M262 760L285 0M-12 654H265M13 562H268M33 483H270M51 416H272M67 358H274M80 307H275M92 264H277M101 227H278M110 196H279M117 168H280M123 145H280M129 124H281M133 107H281M137 92H282M141 79H282M144 68H283M338 760L315 0M365 760L327 0M393 760L338 0M420 760L349 0M448 760L360 0M475 760L371 0M503 760L382 0M530 760L394 0M558 760L405 0M585 760L416 0M613 760L427 0M640 760L438 0M335 654H612M332 562H587M330 483H567M328 416H549M326 358H533M325 307H520M323 264H508M322 227H499M321 196H490M320 168H483M320 145H477M319 124H471M319 107H467M318 92H463M318 79H459M317 68H456" fill="none" stroke="#B7CCEA" stroke-width="0.8" stroke-opacity="0.2" vector-effect="non-scaling-stroke"></path>
+    </svg>
+    <div style="position: relative">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px; margin-bottom: clamp(48px, 6vw, 96px)">
+        <h2 style="margin: 0; display: flex; align-items: center; gap: 16px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.03em">
+          <span aria-hidden="true" style="width: 10px; height: 10px; background: #E0A43A; transform: rotate(45deg); flex: none"></span>{{panel.title}}
+        </h2>
+        <div role="tablist" aria-label="{{a11y.situation}}" style="display: flex; flex-wrap: wrap; gap: 8px 32px">
+          <button type="button" role="tab" id="cp-tab-sell" class="cp-tab" aria-selected="true" aria-controls="cp-steps-sell" data-tab="sell" style="min-height: 44px; padding: 0 0 6px; background: none; color: #F5F6F8; font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; cursor: pointer">{{panel.tabSell}}</button>
+          <button type="button" role="tab" id="cp-tab-buy" class="cp-tab" aria-selected="false" aria-controls="cp-steps-buy" data-tab="buy" style="min-height: 44px; padding: 0 0 6px; background: none; color: #F5F6F8; font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; cursor: pointer">{{panel.tabBuy}}</button>
+        </div>
+      </div>
+      {{{stepPanels}}}
+    </div>
+  </div>
+</section>
+
+<!-- Panneau : Expertise -->
+<section id="expertise" style="padding: clamp(24px, 2.4vw, 40px) clamp(12px, 1.7vw, 24px) 0">
+  <div style="position: relative; overflow: hidden; background: radial-gradient(80% 90% at 15% 0%, #2A5488 0%, rgba(11,37,69,0) 65%), #0F2D55; color: #F5F6F8; padding: clamp(48px, 5vw, 72px) clamp(20px, 4vw, 60px) clamp(56px, 6vw, 88px)">
+    <svg aria-hidden="true" viewBox="0 0 600 760" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; transform: scaleX(-1)">
+      <path d="M-40 760L162 0M-13 760L173 0M15 760L184 0M42 760L195 0M70 760L206 0M97 760L218 0M125 760L229 0M152 760L240 0M180 760L251 0M207 760L262 0M235 760L273 0M262 760L285 0M-12 654H265M13 562H268M33 483H270M51 416H272M67 358H274M80 307H275M92 264H277M101 227H278M110 196H279M117 168H280M123 145H280M129 124H281M133 107H281M338 760L315 0M365 760L327 0M393 760L338 0M420 760L349 0M448 760L360 0M475 760L371 0M503 760L382 0M530 760L394 0M558 760L405 0M585 760L416 0M613 760L427 0M640 760L438 0M335 654H612M332 562H587M330 483H567M328 416H549M326 358H533M325 307H520M323 264H508M322 227H499M321 196H490M320 168H483M320 145H477M319 124H471M319 107H467" fill="none" stroke="#B7CCEA" stroke-width="0.8" stroke-opacity="0.2" vector-effect="non-scaling-stroke"></path>
+    </svg>
+    <div style="position: relative">
+      <h2 style="margin: 0 0 28px; display: flex; align-items: center; gap: 16px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.03em">
+        <span aria-hidden="true" style="width: 10px; height: 10px; background: #E0A43A; transform: rotate(45deg); flex: none"></span>{{expertise.label}}
+      </h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px clamp(40px, 7vw, 120px); align-items: flex-end; margin-bottom: clamp(40px, 5vw, 72px)">
+        <p style="flex: 1 1 520px; margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(30px, 3.4vw, 52px); line-height: 1.12; max-width: 18ch">{{expertise.title}}</p>
+        <p style="flex: 1 1 360px; margin: 0; font-size: 18px; line-height: 1.7; color: rgba(245,246,248,0.85); max-width: 44ch">{{expertise.lead}}</p>
+      </div>
+      <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); column-gap: clamp(40px, 7vw, 120px)">
+        {{{services}}}
+      </ul>
+      <div id="cp-expertise-detail" aria-live="polite" style="margin-top: clamp(36px, 4vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 28px clamp(40px, 7vw, 120px); background: rgba(7,26,51,0.55); padding: clamp(24px, 3vw, 40px)">
+        <div>
+          <p id="cp-svc-title" style="margin: 0 0 12px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #E0A43A">{{expertise.services.0.title}}</p>
+          <p id="cp-svc-desc" style="margin: 0; font-size: 18px; line-height: 1.7; color: rgba(245,246,248,0.9); max-width: 50ch">{{expertise.services.0.desc}}</p>
+        </div>
+        <div>
+          <p style="margin: 0 0 12px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: rgba(245,246,248,0.75)">{{expertise.reference}}</p>
+          <p id="cp-svc-ref" style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(20px, 1.8vw, 26px); line-height: 1.35">{{expertise.services.0.ref}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Références -->
+<section id="references" style="padding: clamp(96px, 10vw, 150px) clamp(20px, 2vw, 28px) clamp(80px, 9vw, 130px)">
+  <div style="display: flex; flex-direction: column; gap: clamp(20px, 2vw, 28px); align-items: flex-start">
+    <h2 style="margin: 0; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 400; font-size: clamp(40px, 5vw, 80px); line-height: 1.08; letter-spacing: -0.01em; max-width: 16ch">{{references.title}}</h2>
+    <p style="margin: 0; font-size: 19px; line-height: 1.8; max-width: 44ch">{{references.lead}}</p>
+  </div>
+
+  <div role="group" aria-label="{{a11y.filterDeals}}" style="margin: clamp(56px, 6vw, 88px) 0 clamp(40px, 4vw, 56px); display: flex; flex-wrap: wrap; gap: 8px 36px; border-bottom: 1px solid rgba(11,37,69,0.18)">
+    {{{filters}}}
+  </div>
+
+  <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: clamp(40px, 4vw, 56px) clamp(28px, 4vw, 64px)">
+    {{{deals}}}
+  </ul>
+
+  <p style="margin: clamp(56px, 6vw, 88px) 0 0; max-width: 72ch; font-size: 17px; line-height: 1.75; color: #4A5568">{{references.note}}</p>
+</section>
+
+<!-- Le fondateur -->
+<section id="fondateur" style="padding: 0 clamp(20px, 2vw, 28px) clamp(80px, 9vw, 130px)">
+  <div style="display: flex; flex-wrap: wrap; gap: 48px clamp(40px, 7vw, 120px); align-items: center">
+    <figure style="flex: 0 1 380px; min-width: 0; margin: 10px">
+      <img src="/assets/maher-zaanouni.png" loading="lazy" alt="{{founder.photoAlt}}" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; outline: 1px solid rgba(224,164,58,0.7); outline-offset: 10px">
+      <figcaption style="margin-top: 32px">
+        <span style="display: block; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 22px">{{founder.name}}</span>
+        <span style="display: block; margin-top: 6px; font-size: 16px; color: #4A5568">{{founder.role}}</span>
+      </figcaption>
+    </figure>
+    <div style="flex: 1 1 520px; min-width: 0">
+      <h2 style="margin: 0 0 32px; display: flex; align-items: center; gap: 16px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.03em">
+        <span aria-hidden="true" style="width: 10px; height: 10px; background: #E0A43A; transform: rotate(45deg); flex: none"></span>{{founder.label}}
+      </h2>
+      <blockquote style="margin: 0">
+        <p style="margin: 0; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 50px); line-height: 1.16; letter-spacing: -0.01em; max-width: 22ch">{{founder.quote}}</p>
+      </blockquote>
+      <div style="margin-top: 36px; display: flex; flex-direction: column; gap: 18px; max-width: 60ch; font-size: 18px; line-height: 1.8; color: #2D3B50">
+        <p style="margin: 0">{{founder.paragraphs.0}}</p>
+        <p style="margin: 0">{{founder.paragraphs.1}}</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin: clamp(96px, 10vw, 150px) 0 clamp(48px, 5vw, 72px); display: flex; align-items: center; gap: 16px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.03em">
+    <span aria-hidden="true" style="width: 10px; height: 10px; background: #E0A43A; transform: rotate(45deg); flex: none"></span>{{founder.careerTitle}}
+  </h3>
+  <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 56px 24px; text-align: center">
+    {{{career}}}
+  </ol>
+</section>
+
+<!-- Panneau : Ce que l'IA ne remplace pas -->
+<section style="padding: 0 clamp(12px, 1.7vw, 24px)">
+  <div style="position: relative; overflow: hidden; background: radial-gradient(80% 90% at 85% 10%, #2A5488 0%, rgba(11,37,69,0) 65%), #163763; color: #F5F6F8; padding: clamp(48px, 5vw, 72px) clamp(20px, 4vw, 60px) clamp(56px, 6vw, 88px)">
+    <svg aria-hidden="true" viewBox="0 0 600 760" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%">
+      <path d="M-40 760L162 0M-13 760L173 0M15 760L184 0M42 760L195 0M70 760L206 0M97 760L218 0M125 760L229 0M152 760L240 0M180 760L251 0M207 760L262 0M235 760L273 0M262 760L285 0M-12 654H265M13 562H268M33 483H270M51 416H272M67 358H274M80 307H275M92 264H277M101 227H278M338 760L315 0M365 760L327 0M393 760L338 0M420 760L349 0M448 760L360 0M475 760L371 0M503 760L382 0M530 760L394 0M558 760L405 0M585 760L416 0M613 760L427 0M640 760L438 0M335 654H612M332 562H587M330 483H567M328 416H549M326 358H533M325 307H520M323 264H508M322 227H499" fill="none" stroke="#B7CCEA" stroke-width="0.8" stroke-opacity="0.2" vector-effect="non-scaling-stroke"></path>
+    </svg>
+    <div style="position: relative">
+      <h2 style="margin: 0 0 clamp(48px, 6vw, 88px); display: flex; align-items: center; gap: 16px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.03em">
+        <span aria-hidden="true" style="width: 10px; height: 10px; background: #E0A43A; transform: rotate(45deg); flex: none"></span>{{ai.title}}
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 48px clamp(32px, 4vw, 64px)">
+        {{{aiItems}}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Co-développement -->
+<section id="codeveloppement" style="padding: clamp(96px, 10vw, 150px) clamp(20px, 2vw, 28px)">
+  <h2 style="margin: 0; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 400; font-size: clamp(32px, 4vw, 64px); line-height: 1.12; letter-spacing: -0.01em; max-width: 24ch">{{codev.title}}</h2>
+  <ol style="list-style: none; margin: clamp(64px, 7vw, 110px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 48px clamp(32px, 4vw, 64px)">
+    {{{codevSteps}}}
+  </ol>
+  <p style="margin: clamp(56px, 6vw, 88px) 0 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(20px, 1.7vw, 26px); line-height: 1.45; max-width: 46ch">{{codev.closing}}</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="padding: 0 clamp(12px, 1.7vw, 24px) clamp(24px, 2.4vw, 40px)">
+  <div style="position: relative; overflow: hidden; background: radial-gradient(70% 80% at 10% 100%, #234C80 0%, rgba(11,37,69,0) 65%), #0B2545; color: #F5F6F8; padding: clamp(56px, 6vw, 96px) clamp(20px, 4vw, 60px)">
+    <div style="position: relative; display: flex; flex-wrap: wrap; gap: 48px clamp(40px, 7vw, 120px); align-items: flex-start">
+      <div style="flex: 1 1 420px; min-width: 0">
+        <h2 style="margin: 0; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 72px); line-height: 1.08; letter-spacing: -0.01em; max-width: 13ch">{{contact.title}}</h2>
+        <p style="margin: 28px 0 0; font-size: 19px; line-height: 1.7; color: rgba(245,246,248,0.86); max-width: 38ch">{{contact.lead}}</p>
+        <ul style="list-style: none; margin: 40px 0 0; padding: 0; display: flex; flex-direction: column; gap: 18px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.03em">
+          <li style="display: flex; align-items: center; gap: 14px">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#E0A43A" stroke-width="1.6" style="width: 22px; height: 22px; flex: none"><rect x="5" y="11" width="14" height="9" rx="1"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>
+            {{contact.trustConfidential}}
+          </li>
+          <li style="display: flex; align-items: center; gap: 14px">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#E0A43A" stroke-width="1.6" style="width: 22px; height: 22px; flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path></svg>
+            {{contact.trustRegions}}
+          </li>
+        </ul>
+      </div>
+
+      <div style="flex: 1 1 540px; min-width: 0">
+        <form id="cp-form" action="/api/contact" method="post" novalidate data-error-invalid="{{contact.errorInvalid}}" data-error-send="{{contact.errorSend}}" style="display: flex; flex-direction: column; gap: 32px">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 32px">
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="cp-nom" style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: rgba(245,246,248,0.8)">{{contact.fieldName}}</label>
+              <input id="cp-nom" name="name" class="cp-field" type="text" autocomplete="organization" required maxlength="200" style="min-height: 48px; padding: 0; border: 0; border-bottom: 1px solid rgba(245,246,248,0.55); background: transparent; color: #F5F6F8; font: inherit; font-size: 18px">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="cp-mail" style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: rgba(245,246,248,0.8)">{{contact.fieldEmail}}</label>
+              <input id="cp-mail" name="email" class="cp-field" type="email" autocomplete="email" required maxlength="200" style="min-height: 48px; padding: 0; border: 0; border-bottom: 1px solid rgba(245,246,248,0.55); background: transparent; color: #F5F6F8; font: inherit; font-size: 18px">
+            </div>
+          </div>
+          <fieldset style="margin: 0; padding: 0; border: 0">
+            <legend style="padding: 0; margin-bottom: 14px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: rgba(245,246,248,0.8)">{{contact.fieldType}}</legend>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px">
+              {{{ops}}}
+            </div>
+          </fieldset>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label for="cp-projet" style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: rgba(245,246,248,0.8)">{{contact.fieldProject}}</label>
+            <textarea id="cp-projet" name="message" class="cp-field" rows="4" maxlength="5000" style="padding: 12px 0; border: 0; border-bottom: 1px solid rgba(245,246,248,0.55); background: transparent; color: #F5F6F8; font: inherit; font-size: 18px; line-height: 1.6; resize: vertical"></textarea>
+          </div>
+          <div aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden">
+            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <input type="hidden" name="operation" value="">
+          <input type="hidden" name="lang" value="{{meta.lang}}">
+          <p id="cp-error" role="alert" hidden style="margin: 0; font-size: 16px; line-height: 1.5; color: #E0A43A"></p>
+          <button type="submit" id="cp-submit" class="cp-btn" data-label="{{contact.submit}}" data-label-sending="{{contact.sending}}" style="align-self: flex-start; min-height: 56px; padding: 0 32px; background: #F5F6F8; color: #0B2545; border: 0; font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; cursor: pointer">{{contact.submit}}</button>
+        </form>
+        <div id="cp-sent" role="status" hidden class="cp-rise" style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; animation-duration: .6s">
+          <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="#E0A43A" stroke-width="1.5" style="width: 56px; height: 56px"><circle cx="24" cy="24" r="22"></circle><path d="M15 24.5l6 6 12-13"></path></svg>
+          <p style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 40px; line-height: 1.1">{{contact.sentTitle}}</p>
+          <p style="margin: 0; font-size: 18px; line-height: 1.7; color: rgba(245,246,248,0.86); max-width: 40ch">{{contact.sentText}}</p>
+          <button type="button" id="cp-again" class="cp-link" style="min-height: 44px; padding: 0 0 6px; background: none; border: 0; border-bottom: 1.5px solid #E0A43A; color: #F5F6F8; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; cursor: pointer">{{contact.sentAgain}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Pied de page -->
+<footer class="cp-foot" style="background: #0B2545; color: #F5F6F8; padding: clamp(64px, 7vw, 96px) clamp(20px, 2vw, 28px) 48px; text-align: center">
+  <a href="#accueil" aria-label="{{a11y.home}}" style="display: inline-block"><img src="/assets/capinvest-logo.png" width="968" height="335" loading="lazy" alt="Capinvest Partners" style="display: block; height: 84px; width: auto; max-width: 100%"></a>
+  <p style="margin: 28px auto 0; max-width: 52ch; font-size: 16px; line-height: 1.6; color: rgba(245,246,248,0.78)">{{footer.tagline}}</p>
+  <nav aria-label="{{a11y.footerNav}}" style="margin-top: 48px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 36px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 0.02em">
+    <a href="#metier">{{nav.business}}</a>
+    <a href="#expertise">{{nav.expertise}}</a>
+    <a href="#references">{{nav.references}}</a>
+    <a href="#fondateur">{{nav.founder}}</a>
+    <a href="#contact">{{nav.contact}}</a>
+  </nav>
+  <span aria-hidden="true" style="display: block; width: 72px; height: 2px; background: #E0A43A; margin: 40px auto"></span>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 48px; font-family: 'Montserrat', sans-serif; font-size: 14px; text-transform: uppercase; letter-spacing: 0.02em; color: rgba(245,246,248,0.78)">
+    <span>{{footer.copyright}}</span>
+    <a href="#accueil">{{footer.legal}}</a>
+    <a href="#accueil">{{footer.privacy}}</a>
+    <span>{{footer.madeBy}} <a href="https://melik.zaanouni.com" target="_blank" rel="noopener" style="text-decoration: underline; text-decoration-color: rgba(224,164,58,0.7); text-underline-offset: 5px">M-Solutions</a></span>
+  </div>
+  <a href="#accueil" aria-label="{{a11y.linkedin}}" style="margin: 40px auto 0; width: 56px; height: 56px; border-radius: 50%; background: #F5F6F8; display: flex; align-items: center; justify-content: center">
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="#0B2545" style="width: 22px; height: 22px"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"></path></svg>
+  </a>
+</footer>
+
+</div>
