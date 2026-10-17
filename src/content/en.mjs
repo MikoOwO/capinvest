@@ -5,9 +5,16 @@ export default {
     lang: 'en',
     locale: 'en_GB',
     path: '/en',
-    title: 'Capinvest Partners — Corporate finance advisory',
+    title: 'Capinvest Partners — Corporate finance advisory, M&A and fundraising',
     description:
-      'Capinvest Partners advises business owners and investors on their capital transactions: fundraisings, disposals, acquisitions, IPOs and fund structuring, in Europe, Africa and the Middle East.',
+      'Corporate finance advisory in Europe, Africa and the Middle East: fundraisings, disposals, acquisitions, IPOs and fund structuring.',
+  },
+
+  seo: {
+    imageAlt: 'Capinvest Partners, corporate finance advisory',
+    founderJobTitle: 'Founder and managing partner',
+    areas: ['Europe', 'Africa', 'Middle East'],
+    knowsAbout: ['Mergers and acquisitions', 'Fundraising', 'Initial public offerings', 'Investment fund structuring', 'Corporate finance'],
   },
 
   language: {

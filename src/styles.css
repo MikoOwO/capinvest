@@ -50,8 +50,8 @@ a{color:inherit}
 .cp-mobile{display:flex}
 .cp-btn-outline{transition:background-color .2s,color .2s}
 .cp-btn-outline:hover{background:#E0A43A;color:#0B2545 !important}
-@media (max-width: 1180px){.cp-desk{display:none !important}.cp-burger{display:flex !important}}
-@media (min-width: 1181px){.cp-mobile{display:none !important}}
+@media (max-width: 1260px){.cp-desk{display:none !important}.cp-burger{display:flex !important}}
+@media (min-width: 1261px){.cp-mobile{display:none !important}}
 .cp-btn{transition:background-color .2s,color .2s}
 .cp-btn:hover{background:#E0A43A !important;color:#0B2545 !important}
 :focus-visible{outline:2px solid #E0A43A;outline-offset:3px}

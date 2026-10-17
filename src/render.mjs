@@ -9,8 +9,8 @@ export const DEFAULT_CATEGORY = 'fonds';
 export function stats(c) {
   return c.business.stats
     .map(
-      (s) => `<div>
-      <dt style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: clamp(60px, 6.6vw, 108px); line-height: 1; letter-spacing: -0.02em">${esc(s.value)}</dt>
+      (s) => `<div style="container-type: inline-size">
+      <dt style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: clamp(56px, 21cqw, 100px); line-height: 1; letter-spacing: -0.02em; white-space: nowrap">${esc(s.value)}</dt>
       <dd style="margin: 22px auto 0; font-size: 17px; line-height: 1.5; max-width: 24ch">${esc(s.label)}</dd>
     </div>`,
     )
@@ -21,7 +21,7 @@ export function compareRows(c) {
   return c.business.compare
     .map(
       (r) => `<div role="row" style="display: contents">
-      <div role="cell" style="padding: 26px 0; border-bottom: 1px solid rgba(11,37,69,0.14); font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: clamp(17px, 1.7vw, 26px); line-height: 1.35; color: #6B7686">${esc(r.them)}</div>
+      <div role="cell" style="padding: 26px 0; border-bottom: 1px solid rgba(11,37,69,0.14); font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: clamp(17px, 1.7vw, 26px); line-height: 1.35; color: #657080">${esc(r.them)}</div>
       <div role="cell" style="padding: 26px 0; border-bottom: 1px solid rgba(11,37,69,0.14); font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(17px, 1.7vw, 26px); line-height: 1.35; color: #0B2545">${esc(r.us)}</div>
     </div>`,
     )
@@ -42,7 +42,8 @@ export function pillars(c) {
 // Both step lists are rendered, the inactive one is hidden; site.js swaps them with the tabs.
 export function stepPanels(c) {
   const panel = (id, tab, steps, hidden) =>
-    `<ol role="tabpanel" id="cp-steps-${id}" aria-labelledby="cp-tab-${id}"${hidden ? ' hidden' : ''} style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); column-gap: clamp(40px, 7vw, 120px)">
+    `<div role="tabpanel" id="cp-steps-${id}" aria-labelledby="cp-tab-${id}"${hidden ? ' hidden' : ''}>
+      <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); column-gap: clamp(40px, 7vw, 120px)">
         ${steps
           .map(
             (text, i) => `<li style="display: flex; align-items: baseline; gap: 24px; padding: clamp(22px, 2.4vw, 32px) 0; border-bottom: 1px solid rgba(245,246,248,0.55)">
@@ -51,7 +52,8 @@ export function stepPanels(c) {
         </li>`,
           )
           .join('\n        ')}
-      </ol>`;
+      </ol>
+    </div>`;
   return (
     panel('sell', 'sell', c.panel.sellSteps, false) + '\n      ' + panel('buy', 'buy', c.panel.buySteps, true)
   );
@@ -97,7 +99,7 @@ export function career(c) {
     .map(
       (p) => `<li>
         <span style="display: block; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; color: #8C5E12">${esc(p.year)}</span>
-        <span style="display: block; margin-top: 16px; font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: clamp(48px, 4.8vw, 80px); line-height: 1; letter-spacing: -0.02em">${esc(p.volume)}</span>
+        <span style="display: block; margin-top: 16px; font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: clamp(48px, 4.8vw, 80px); line-height: 1; letter-spacing: -0.02em; white-space: nowrap">${esc(p.volume)}</span>
         <span style="display: block; margin-top: 20px; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 18px">${esc(p.firm)}</span>
         <span style="display: block; margin: 8px auto 0; font-size: 16px; line-height: 1.55; color: #4A5568; max-width: 26ch">${esc(p.what)}</span>
       </li>`,

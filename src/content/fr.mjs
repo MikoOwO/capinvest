@@ -6,9 +6,17 @@ export default {
     lang: 'fr',
     locale: 'fr_FR',
     path: '/',
-    title: 'Capinvest Partners — Conseil en finance d’entreprise',
+    title: 'Capinvest Partners — Conseil en finance d’entreprise, M&A et levées de fonds',
     description:
-      'Capinvest Partners conseille dirigeants et investisseurs sur leurs opérations en capital : levées de fonds, cessions, acquisitions, introductions en bourse et structuration de fonds, en Europe, en Afrique et au Moyen-Orient.',
+      'Conseil en finance d’entreprise (Europe, Afrique, Moyen-Orient) : levées de fonds, cessions, acquisitions, introductions en bourse, structuration de fonds.',
+  },
+
+  // Données structurées (schema.org) et image de partage : uniquement ce qui figure sur la page.
+  seo: {
+    imageAlt: 'Capinvest Partners, conseil en finance d’entreprise',
+    founderJobTitle: 'Fondateur et associé gérant',
+    areas: ['Europe', 'Afrique', 'Moyen-Orient'],
+    knowsAbout: ['Fusions-acquisitions', 'Levées de fonds', 'Introductions en bourse', 'Structuration de fonds d’investissement', 'Finance d’entreprise'],
   },
 
   language: {

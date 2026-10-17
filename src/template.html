@@ -4,7 +4,7 @@
 <header style="position: sticky; top: 0; z-index: 30; background: rgba(11,37,69,0.55); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: #F5F6F8; border-bottom: 1px solid rgba(245,246,248,0.10)">
   <div style="height: 84px; max-width: 1440px; margin: 0 auto; padding: 0 clamp(16px, 2.4vw, 40px); display: flex; align-items: center; gap: 24px">
     <a href="#accueil" aria-label="{{a11y.home}}" style="display: flex; align-items: center; flex: none">
-      <img src="/assets/capinvest-logo.png" width="968" height="335" alt="Capinvest Partners" style="display: block; height: 46px; width: auto">
+      <img src="/assets/capinvest-logo.png" width="968" height="335" fetchpriority="high" alt="Capinvest Partners" style="display: block; height: 46px; width: auto">
     </a>
     <nav class="cp-nav cp-desk" aria-label="{{a11y.mainNav}}" style="flex: 1; justify-content: center; align-items: center; gap: clamp(20px, 2.2vw, 36px); font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap">
       <a href="#metier">{{nav.business}}</a>
@@ -176,7 +176,7 @@
 <section id="fondateur" style="padding: 0 clamp(20px, 2vw, 28px) clamp(80px, 9vw, 130px)">
   <div style="display: flex; flex-wrap: wrap; gap: 48px clamp(40px, 7vw, 120px); align-items: center">
     <figure style="flex: 0 1 380px; min-width: 0; margin: 10px">
-      <img src="/assets/maher-zaanouni.png" loading="lazy" alt="{{founder.photoAlt}}" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; outline: 1px solid rgba(224,164,58,0.7); outline-offset: 10px">
+      <picture><source srcset="/assets/maher-zaanouni.webp" type="image/webp"><img src="/assets/maher-zaanouni.png" loading="lazy" alt="{{founder.photoAlt}}" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; outline: 1px solid rgba(224,164,58,0.7); outline-offset: 10px"></picture>
       <figcaption style="margin-top: 32px">
         <span style="display: block; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 22px">{{founder.name}}</span>
         <span style="display: block; margin-top: 6px; font-size: 16px; color: #4A5568">{{founder.role}}</span>
