@@ -50,7 +50,7 @@ export default {
 
   hero: {
     eyebrow: 'Conseil en finance d’entreprise en Europe, en Afrique et au Moyen-Orient',
-    title: 'Optimisez les termes de vos opérations en capital.',
+    title: 'Les meilleurs termes pour vos opérations en capital.',
     lead: 'Levées de fonds, cessions, acquisitions, introductions en bourse et structuration de fonds : nous structurons, valorisons et négocions les termes de votre opération en capital, à la vente comme à l’achat, pour un deal qui réussit et un partenariat qui dure.',
     ctaTalk: 'Échangez avec nous',
     ctaReferences: 'Nos références',
@@ -59,11 +59,11 @@ export default {
 
   business: {
     title: 'Un conseil, pas un marchand de titres.',
-    lead: 'Notre rôle est d’obtenir pour vous les meilleurs termes (prix, structure, garanties, gouvernance, calendrier) sans fragiliser ce qui fera réussir le projet après la signature.',
+    lead: 'Notre rôle est d’obtenir pour vous les meilleurs termes (prix, structure, garanties, gouvernance, calendrier) sans fragiliser ce qui fera réussir le projet après le closing.',
     stats: [
       { value: '25+', label: 'ans d’expérience en marchés de capitaux et placements privés' },
-      { value: '+1 Md€', label: 'de mandats conseillés depuis 2009' },
-      { value: '3', label: 'places de marché : Euronext, NYSE et Bourse de Tunis' },
+      { value: '+1 Md€', label: 'de mandats conseillés chez Capinvest Partners' },
+      { value: '+50 Md€', label: 'Exécution d’opérations de financement avant Capinvest Partners' },
       { value: 'CIIA', label: 'Chartered International Investment Analyst' },
     ],
     compareThem: 'Un négociant de titres',
@@ -77,7 +77,7 @@ export default {
     pillars: [
       {
         title: 'L’intérêt de notre client',
-        text: 'Votre valeur, vos conditions, votre position dans la négociation. C’est notre mandat, et il passe en premier.',
+        text: 'Vos valeurs, vos conditions, votre position dans la négociation. C’est notre mandat, et il passe en premier.',
       },
       {
         title: 'L’intérêt du projet',
@@ -96,7 +96,7 @@ export default {
     tabBuy: 'Vous achetez',
     sellSteps: [
       'Préparation de l’entreprise, business plan et equity story',
-      'Valorisation défendue et argumentée',
+      'Une valorisation que vous pouvez défendre à la table des négociations',
       'Mise en concurrence des acquéreurs et investisseurs',
       'Négociation du prix, des garanties et de la gouvernance',
     ],
@@ -112,7 +112,7 @@ export default {
     label: 'Notre expertise',
     title: 'Toute la chaîne du conseil, de la stratégie au closing.',
     lead: 'Modélisation, valorisation, mémorandum d’information, data room, due diligence, documentation et négociation.',
-    reference: 'Référence',
+    reference: 'Exemple de référence',
     services: [
       {
         title: 'Conseil stratégique',
@@ -187,7 +187,7 @@ export default {
       { cat: 'avant', year: '2004', op: 'Restructuration d’une facilité bancaire syndiquée', detail: 'Télécoms, France', amount: 'EUR 15 Md' },
       { cat: 'avant', year: '2002–03', op: 'Financements d’Atos Origin', detail: 'Acquisitions de la division conseil de KPMG et de Sema', amount: 'EUR 1,85 Md' },
     ],
-    note: 'Au-delà des opérations conclues, de nombreux mandats de préparation et de structuration (business plans, valorisations, mémorandums, plans de restructuration) dans l’industrie, le tourisme, la santé, les services maritimes et le digital.',
+    note: 'Au-delà des opérations conclues, de nombreux mandats de préparation et de structuration (business plans, valorisations, mémorandums, plans de restructuration) dans les secteurs des solutions digitales, fintech, télécoms, média, industrie, infrastructure, tourisme, santé, distribution et institutions financières.',
   },
 
   founder: {
@@ -197,8 +197,7 @@ export default {
     label: 'Le mot du fondateur',
     quote: '« L’intelligence artificielle aide la réflexion, elle accélère. Elle ne sait pas mener un deal à son terme. »',
     paragraphs: [
-      'Une IA résume un secteur ou esquisse une valorisation en quelques secondes, et nous l’utilisons pour aller plus vite. Mais une opération se joue là où aucune base de données ne va : un dirigeant qui cède l’entreprise d’une vie, la clause qui fait basculer une négociation, la confiance entre deux parties qui ne se connaissent pas encore.',
-      'Un bon deal n’est pas celui où une partie gagne contre l’autre. C’est celui qui crée les conditions de la réussite du projet.',
+      'Une IA passe un marché au crible, compare des multiples ou esquisse une valorisation en un rien de temps, et nous nous en servons pour aller plus loin dans l’analyse. Mais une opération se joue là où aucune base de données n’a accès : un dirigeant qui cède l’entreprise de toute une vie, la clause qui fait basculer une négociation, la confiance à bâtir entre deux futurs partenaires.',
     ],
     careerTitle: 'Parcours',
     career: [
@@ -213,16 +212,16 @@ export default {
     title: 'Ce que l’IA ne remplace pas',
     items: [
       {
-        title: 'Le contexte, pas la moyenne',
-        text: 'Actionnaires, contraintes réglementaires et culturelles : nous connaissons les marchés où nous intervenons.',
+        title: 'Contexte vs. standardisation',
+        text: 'Dynamiques actionnariales, exigences réglementaires, codes culturels : nous connaissons les marchés sur lesquels nous intervenons.',
       },
       {
         title: 'Le jugement en négociation',
-        text: 'Quand tenir, quand concéder, quelle clause compte vraiment : cela s’apprend à la table, pas dans un modèle.',
+        text: 'Quand tenir, quand concéder, quelle clause compte vraiment : cela s’apprend sur le terrain, pas derrière un écran.',
       },
       {
         title: 'La confiance et le réseau',
-        text: '25 ans de relations avec investisseurs, banques, cabinets d’avocats et d’audit, institutions multilatérales.',
+        text: '25 ans de relations avec investisseurs, institutions financières, cabinets d’avocats et d’audit, et bailleurs multilatéraux.',
       },
     ],
   },
@@ -230,16 +229,16 @@ export default {
   codev: {
     title: 'Au-delà de la réussite d’une opération, nous vous accompagnons pour réussir votre feuille de route à long terme.',
     steps: [
-      { n: '1', title: 'Avant', text: 'Nous comprenons votre stratégie, bien avant l’opération.' },
+      { n: '1', title: 'Avant', text: 'Nous affinons avec vous votre stratégie et votre equity story, avant l’approche du marché.' },
       { n: '2', title: 'Pendant', text: 'Nous la défendons à la table de négociation.' },
       { n: '3', title: 'Après', text: 'Nous restons à vos côtés pour les étapes suivantes.' },
     ],
-    closing: 'Notre réussite se mesure à la qualité et à la durée de notre relation avec nos clients et partenaires.',
+    closing: 'Notre réussite se mesure à la relation solide et durable avec nos partenaires.',
   },
 
   contact: {
     title: 'Parlons de votre prochaine opération.',
-    lead: 'Un premier échange confidentiel et sans engagement, directement avec le fondateur.',
+    lead: 'Un premier échange confidentiel et sans engagement, directement avec l’associé fondateur.',
     trustConfidential: 'Confidentialité totale',
     trustRegions: 'Europe, Afrique et région MENA',
     fieldName: 'Nom et société',

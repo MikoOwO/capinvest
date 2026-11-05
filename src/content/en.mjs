@@ -48,7 +48,7 @@ export default {
 
   hero: {
     eyebrow: 'Corporate finance advisory in Europe, Africa and the Middle East',
-    title: 'Optimise the terms of your capital transactions.',
+    title: 'The best terms for your capital transactions.',
     lead: 'Fundraisings, disposals, acquisitions, IPOs and fund structuring: we structure, value and negotiate the terms of your capital transaction, on the sell side as on the buy side, for a deal that succeeds and a partnership that lasts.',
     ctaTalk: 'Talk to us',
     ctaReferences: 'Our track record',
@@ -57,25 +57,25 @@ export default {
 
   business: {
     title: 'An adviser, not a securities dealer.',
-    lead: 'Our role is to secure the best terms for you (price, structure, warranties, governance, timetable) without weakening what will make the project succeed after signing.',
+    lead: 'Our role is to secure the best terms for you (price, structure, warranties, governance, timetable) without weakening what will make the project succeed after closing.',
     stats: [
       { value: '25+', label: 'years of experience in capital markets and private placements' },
-      { value: '€1bn+', label: 'of mandates advised since 2009' },
-      { value: '3', label: 'exchanges: Euronext, NYSE and the Tunis Stock Exchange' },
+      { value: '€1bn+', label: 'of mandates advised at Capinvest Partners' },
+      { value: '€50bn+', label: 'Execution of capital transactions before Capinvest Partners' },
       { value: 'CIIA', label: 'Chartered International Investment Analyst' },
     ],
     compareThem: 'A securities dealer',
     compareUs: 'Capinvest Partners, your adviser',
     compare: [
       { them: 'Is mainly looking to close', us: 'Optimises the terms of the transaction for its client' },
-      { them: 'Is paid for making introductions', us: 'Balances the client’s interest and the project’s' },
-      { them: 'Stays neutral on the project’s future', us: 'Works for the success of the deal and the partnership' },
+      { them: 'Intermediation fee', us: 'Balances the client’s interest and the project’s' },
+      { them: 'Neutral on the project’s future', us: 'Works for the success of the deal and the partnership' },
       { them: 'Disappears once the transaction is signed', us: 'Stays by your side well after closing' },
     ],
     pillars: [
       {
         title: 'Our client’s interest',
-        text: 'Your value, your terms, your position in the negotiation. That is our mandate, and it comes first.',
+        text: 'Your values, your terms, your position during the negotiation. That is our mandate, and it comes first.',
       },
       {
         title: 'The project’s interest',
@@ -94,7 +94,7 @@ export default {
     tabBuy: 'You are buying',
     sellSteps: [
       'Preparing the company, business plan and equity story',
-      'A well-argued, defensible valuation',
+      'A valuation you can stand behind in negotiation',
       'Running a competitive process among buyers and investors',
       'Negotiating price, warranties and governance',
     ],
@@ -110,7 +110,7 @@ export default {
     label: 'Our expertise',
     title: 'The whole advisory chain, from strategy to closing.',
     lead: 'Modelling, valuation, information memorandum, data room, due diligence, documentation and negotiation.',
-    reference: 'Reference',
+    reference: 'Featured reference',
     services: [
       {
         title: 'Strategic advisory',
@@ -185,7 +185,7 @@ export default {
       { cat: 'avant', year: '2004', op: 'Restructuring of a syndicated bank facility', detail: 'Telecoms, France', amount: 'EUR 15bn' },
       { cat: 'avant', year: '2002–03', op: 'Atos Origin financings', detail: 'Acquisitions of KPMG’s consulting division and of Sema', amount: 'EUR 1.85bn' },
     ],
-    note: 'Beyond completed transactions, numerous preparation and structuring mandates (business plans, valuations, memoranda, restructuring plans) in industry, tourism, healthcare, maritime services and digital.',
+    note: 'Beyond closed deals, we have run many preparation and structuring mandates (business plans, valuations, information memoranda, restructuring plans) in digital solutions, fintech, TMT, industry, infrastructure, tourism, healthcare, retail and financial institutions.',
   },
 
   founder: {
@@ -193,10 +193,9 @@ export default {
     role: 'Founder and managing partner, CIIA',
     photoAlt: 'Maher Zaanouni, founder and managing partner of Capinvest Partners',
     label: 'A word from the founder',
-    quote: '“Artificial intelligence helps us think, and it speeds things up. It cannot see a deal through to completion.”',
+    quote: '“Artificial intelligence can sharpen the thinking and speed up the process. It cannot close a deal.”',
     paragraphs: [
-      'An AI can summarise a sector or sketch a valuation in seconds, and we use it to move faster. But a transaction is won where no database goes: an owner selling the company of a lifetime, the clause that tips a negotiation, the trust between two parties who do not yet know each other.',
-      'A good deal is not one where one party wins against the other. It is one that creates the conditions for the project to succeed.',
+      'AI can screen an entire market, benchmark comparables or rough out a valuation in no time, and we use it to go deeper in our analysis. But a transaction is won or lost where no database can reach: an owner parting with a lifetime’s work, the clause that tips a negotiation, the trust that must be built between two potential partners.',
     ],
     careerTitle: 'Career',
     career: [
@@ -211,16 +210,16 @@ export default {
     title: 'What AI does not replace',
     items: [
       {
-        title: 'Context, not the average',
-        text: 'Shareholders, regulatory and cultural constraints: we know the markets in which we operate.',
+        title: 'Context vs. standardisation',
+        text: 'Shareholder dynamics, regulatory requirements, cultural nuances: we know the markets we operate in.',
       },
       {
         title: 'Judgement in negotiation',
-        text: 'When to hold firm, when to concede, which clause really matters: that is learned at the table, not in a model.',
+        text: 'When to hold firm, when to give way, which clause really matters: you learn that on the ground, not behind a screen.',
       },
       {
         title: 'Trust and network',
-        text: '25 years of relationships with investors, banks, law and audit firms, multilateral institutions.',
+        text: '25 years building relationships with investors, financial institutions, law and audit firms, and multilateral institutions.',
       },
     ],
   },
@@ -228,16 +227,16 @@ export default {
   codev: {
     title: 'Beyond the success of a transaction, we support you in achieving your long-term roadmap.',
     steps: [
-      { n: '1', title: 'Before', text: 'We understand your strategy, well before the transaction.' },
+      { n: '1', title: 'Before', text: 'We fine-tune your strategy and equity story with you, before you go to market.' },
       { n: '2', title: 'During', text: 'We defend it at the negotiating table.' },
       { n: '3', title: 'After', text: 'We stay by your side for the next steps.' },
     ],
-    closing: 'Our success is measured by the quality and longevity of our relationship with our clients and partners.',
+    closing: 'Our success is measured by strong, long-standing relationships with our partners.',
   },
 
   contact: {
     title: 'Let’s talk about your next transaction.',
-    lead: 'A first conversation, confidential and without obligation, directly with the founder.',
+    lead: 'A first conversation, confidential and without obligation, directly with the founding partner.',
     trustConfidential: 'Total confidentiality',
     trustRegions: 'Europe, Africa and the MENA region',
     fieldName: 'Name and company',
